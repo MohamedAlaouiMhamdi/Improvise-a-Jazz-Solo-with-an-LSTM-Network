@@ -25,10 +25,12 @@ The model is trained on a corpus of jazz music preprocessed into sequences of mu
    - Uses an LSTM network with a hidden state size of 64.
    - Inputs are reshaped to match the LSTM requirements.
    - A dense layer with softmax activation is used for output predictions.
+<img width="642" alt="Screenshot 2024-12-09 101107" src="https://github.com/user-attachments/assets/95b2a9f9-f708-4729-94a2-046eae86e236">
 
 3. **Training**:
    - Trains on snippets of 30 musical values.
    - Optimizes to predict the next note in a sequence using categorical cross-entropy loss.
+<img width="302" alt="Screenshot 2024-12-09 101220" src="https://github.com/user-attachments/assets/3abda6e6-bb73-4a61-9e81-a45268d768ad">
 
 4. **Generation**:
    - Implements a custom sequence generation loop.
